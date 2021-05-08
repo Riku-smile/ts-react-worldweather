@@ -1,5 +1,5 @@
 body {
-  background: linear-gradient(orange, blue);
+  background: linear-gradient(#ffd519, 70%, #0dff68);
   color: white;
   height: 100vh;
   margin: 0;
@@ -43,7 +43,7 @@ body {
 }
 .form--note {
   bottom: 0;
-  color: red;
+  color: #ff2519;
   font-size: 0.8rem;
   position: relative;
   right: 0;
@@ -51,7 +51,7 @@ body {
 .form--btn {
   background-color: #fff;
   border: none;
-  border: 2px solid #e29deb;
+  border: 2px solid #ff2519;
   border-radius: 10px;
   color: black;
   cursor: pointer;
@@ -60,7 +60,7 @@ body {
   width: 100px;
 }
 .form--btn:hover {
-  background-color: #e29deb;
+  background-color: #ff2519;
   border: 2px solid white;
   color: white;
   transition: all 0.3s ease-in-out;
@@ -101,5 +101,5 @@ body {
 
 /* Loading.tsx */
 .loading {
-  margin: 0 auto;
+  margin: auto;
 }
