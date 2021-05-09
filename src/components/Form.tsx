@@ -1,7 +1,7 @@
 type Props = {
     city: string,
-    setCity: any,
-    getWeather: any
+    getWeather: (e: any) => void,
+    setCity: React.Dispatch<React.SetStateAction<string>>
 }
 
 const Form: React.FC<Props> = ({city, setCity, getWeather}) => {

@@ -16,7 +16,7 @@ function App() {
     conditionText: "",
     icon: ""
   });
-  const getWeather = (e:any) => {
+  const getWeather = (e: React.MouseEvent<HTMLElement, MouseEvent>) => {
     e.preventDefault();
     setLoading(true);
     axios.get(`https://api.weatherapi.com/v1/current.json?key=717a48bb37a84710b5e61133210605&q=${city}&aqi=no`)

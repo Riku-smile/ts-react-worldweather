@@ -1,5 +1,11 @@
 type Props = {
-    results: any
+    results:{
+        country: string;
+        cityName: string;
+        temperature: string;
+        conditionText: string;
+        icon: string;
+    }
 }
 
 const Results: React.FC<Props> = ({results}) => {
