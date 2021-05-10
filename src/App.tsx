@@ -7,6 +7,10 @@ import Results from './components/Results'
 import Title from './components/Title'
 
 function App() {
+  var date = new Date();
+  var weekDay = ['日','月','火','水','木','金','土'];
+  var today = date.getMonth()+1 + "/" + date.getDate() + "( " + weekDay[date.getDay()] + " )";
+
   const [city, setCity] = useState("");
   const [loading, setLoading] = useState(false);
   const [results, setResults] = useState({
@@ -35,7 +39,7 @@ function App() {
 
   return (
     <div className="app">
-      <Title />
+      <Title today={today} />
       <Form setCity={setCity} getWeather={getWeather} city={city} />
       { loading ? <Loading /> : <Results results={results} /> }
     </div>

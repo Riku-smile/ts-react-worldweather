@@ -1,6 +1,11 @@
-const Title: React.FC = () => {
+type Props = {
+    today: string
+}
+
+const Title: React.FC<Props> = (today) => {
+
     return (
-        <h1 className="app--headline">World Weather</h1>
+        <h1 className="app--headline">{today} World Weather</h1>
     )
 };
 
