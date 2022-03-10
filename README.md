@@ -12,7 +12,7 @@
   React
   Weather API
   
-## ブラウザ
+## Netlify
 https://hardcore-austin-b46a9d.netlify.app/
 
 ## スペシャルサンクス
